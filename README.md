@@ -41,3 +41,38 @@ Você não precisa da palavra- functionchave, da palavra- returnchave e das chav
 A linguagem JavaScript é projetada com base em um simples paradigma orientado a objeto. Um objeto é uma coleção de propriedades, e uma propriedade é uma associação entre um nome (ou chave) e um valor. Um valor de propriedade pode ser uma função, que é então considerada um método do objeto. Além dos objetos que são pré-definidos no browser, você pode definir seus próprios objeto
 
 - const car = {type:"Fiat", model:"500", color:"white"};
+
+## JavaScript-logica-programção
+
+### Operadores
+
+- Operadores de comporação {>=, <=, >, <}
+
+### Condições
+
+- Use if para especificar um bloco de código a ser executado, se uma condição especificada for verdadeira
+
+- Use else para especificar um bloco de código a ser executado, se a mesma condição for falsa
+
+- Use else if para especificar uma nova condição para testar, se a primeira condição for falsa
+
+- Use switch para especificar muitos blocos alternativos de código a serem executados
+
+### Objetos de data
+
+Nos permite trabalhar com datas
+
+- const d = new Date()
+
+### try..catch
+
+A estrutura try...catch deve ser utilizada em operações que podem falhar. Assim, quando a falha acontece a aplicação tem o controle de como era será tratada.
+
+- try: comandos/invocações de métodos que podem gerar uma situação de exceção.
+- catch: bloco executado em caso de exceção no bloco try.
+
+### setInterval()
+
+- O setInterval()método chama uma função em intervalos especificados (em milissegundos).
+- O setInterval()método continua chamando a função até que clearInterval()seja chamado ou a janela seja fechada.
+

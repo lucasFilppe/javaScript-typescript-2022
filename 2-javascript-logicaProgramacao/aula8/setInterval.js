@@ -1,18 +1,10 @@
-function mostrarHora() {
-    let data = new Date();
+const myInterval = setInterval(myTimer, 1000);
 
-    return data.toLocaleDateString('pt-BR', {
-        hour12: false
-    });
+function myTimer() {
+  const date = new Date();
+  document.getElementById("demo").innerHTML = date.toLocaleTimeString();
 }
 
-//executa função em um interbvaslo de tempo
-const timer = setInterval(function(){
-    console.log(mostrarHora())
-}, 1000)
-
-//executa função apenas uma vez
-
-setTimeout (function(){
-    clearInterval(timer)
-}, 10000)
+function myStopFunction() {
+  clearInterval(myInterval);
+}
