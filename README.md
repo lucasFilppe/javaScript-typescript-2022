@@ -100,4 +100,5 @@ O map()método cria uma nova matriz preenchida com os resultados da chamada de u
 
 O reduce()método executa uma função de retorno de chamada "redutor" fornecida pelo usuário em cada elemento da matriz, em ordem, passando o valor de retorno do cálculo no elemento anterior. O resultado final da execução do redutor em todos os elementos da matriz é um único valor.
 
+## Programção orientada a obejtos
 
