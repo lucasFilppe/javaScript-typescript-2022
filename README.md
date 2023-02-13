@@ -76,3 +76,9 @@ A estrutura try...catch deve ser utilizada em operações que podem falhar. Assi
 - O setInterval()método chama uma função em intervalos especificados (em milissegundos).
 - O setInterval()método continua chamando a função até que clearInterval()seja chamado ou a janela seja fechada.
 
+## Funções avançado
+
+### Método constructor do JavaScript
+
+É um método especial executado no momento em que a classe é instanciada, além disso os atributos da classe são definidos dentro deste método. Abaixo podemos ver como é feita sua declaração.
+
