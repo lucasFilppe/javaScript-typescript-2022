@@ -82,3 +82,22 @@ A estrutura try...catch deve ser utilizada em operações que podem falhar. Assi
 
 É um método especial executado no momento em que a classe é instanciada, além disso os atributos da classe são definidos dentro deste método. Abaixo podemos ver como é feita sua declaração.
 
+## Arrays avançado
+
+### Slice
+
+O método slice() retorna uma cópia de parte de um array a partir de um subarray criado entre as posições início e fim (fim não é incluído) de um array original. O Array original não é modificado.
+
+### Filter 
+
+O método filter() cria um novo array com todos os elementos que passaram no teste implementado pela função fornecida.
+
+### Map()
+
+O map()método cria uma nova matriz preenchida com os resultados da chamada de uma função fornecida em cada elemento da matriz de chamada.
+
+### Reduce
+
+O reduce()método executa uma função de retorno de chamada "redutor" fornecida pelo usuário em cada elemento da matriz, em ordem, passando o valor de retorno do cálculo no elemento anterior. O resultado final da execução do redutor em todos os elementos da matriz é um único valor.
+
+
