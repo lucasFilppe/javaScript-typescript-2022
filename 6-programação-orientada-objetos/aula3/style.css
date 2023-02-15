@@ -38,3 +38,8 @@ form button {
 form button:hover{
     background: greenyellow
 }
+
+.error-text{
+    font-size: 12px;
+    color: red
+}
