@@ -102,3 +102,20 @@ O reduce()método executa uma função de retorno de chamada "redutor" fornecida
 
 ## Programção orientada a obejtos
 
+## JavaScript assincrono
+
+### Promisse
+
+Propriedades do Objeto de Promessa
+Um objeto JavaScript Promise pode ser: 
+
+- Pendente
+- Realizada
+- rejeitado
+O objeto Promise suporta duas propriedades: state e result .
+
+Enquanto um objeto Promise está "pendente" (funcionando), o resultado é indefinido.
+
+Quando um objeto Promise é "cumprido", o resultado é um valor.
+
+Quando um objeto Promise é "rejeitado", o resultado é um objeto de erro.
