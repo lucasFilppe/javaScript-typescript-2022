@@ -11,22 +11,33 @@ class Main extends Component {
   state = {
     novaTarefa: "",
     tarefas: [],
+    index: -1,
   };
 
   handleSubmit = (e) => {
     e.preventDefault();
 
-    const { tarefas } = this.state;
+    const { tarefas , index} = this.state;
     let { novaTarefa } = this.state;
     novaTarefa = novaTarefa.trim();
 
     if (tarefas.indexOf(novaTarefa) !== -1) return; //indexOf retorna a posição de um valor especificado do array
 
     const novasTarefas = [...tarefas];
-    this.setState({
-      tarefas: [...novasTarefas, novaTarefa],
-      novaTarefa: "",
-    });
+
+    if (index === -1) {
+      this.setState({
+        tarefas: [...novasTarefas, novaTarefa],
+        novaTarefa: "",
+      });
+    }else{
+      novasTarefas[index] = novaTarefa
+
+      this.setState({
+        tarefas: [...novasTarefas],
+        index: -1
+      });
+    }
   };
 
   handleChange = (e) => {
@@ -36,12 +47,17 @@ class Main extends Component {
   };
 
   handleEdit = (e, index) => {
+    const { traefas } = this.state;
+    this.setState({
+      index,
+      novaTarefa: traefas[index],
+    });
     console.log("edit", index);
   };
 
   handleDelete = (e, index) => {
-    const {tarefas} = this.state;
-    const novaTarefas = [...tarefas]
+    const { tarefas } = this.state;
+    const novaTarefas = [...tarefas];
     novaTarefas.splice(index, 1);
     this.setState({
       tarefas: [...novaTarefas],
